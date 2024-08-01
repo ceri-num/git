@@ -96,7 +96,7 @@ First, let's stage README.md:
 
 ```
 $ git add README.md
-$  git status
+$ git status
 On branch main
 
 No commits yet
@@ -126,7 +126,7 @@ After the commit, git status reports that the workspace is clean i.e. no modific
 
 > Exercice: add 2 new commits by adding or modifying the README.md
 
-Important: A **Commit** is a snapshot of the staged files in your workspace at a point in time.
+Important: A **Commit** is a snapshot of all the staged files in your workspace at a point in time.
 
 ## History
 

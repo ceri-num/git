@@ -1,4 +1,5 @@
 ## What is GitHub?
+
 - **GitHub** is a web-based platform that uses Git for version control.
 - It allows you to store your repositories online and collaborate with others.
 - Key features:
