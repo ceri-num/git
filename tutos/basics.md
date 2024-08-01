@@ -36,7 +36,7 @@ You could have edited this file directly.
 
 ### Create your first local repository
 
-cf. https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
+> Doc: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
 
 ```
 $ mkdir MyFirstRepository
@@ -56,10 +56,10 @@ A local repository contains 3 areas:
 - a **Stage area** or **index**  that stores information about what will go into your next commit (we will come to that later on). Initially empty.
 - a **Local repository** (__.git__ folder automatically created and managed by git) that contains the history i.e. all the versions of all tracked files.
 
-Note: from the user perspective, a git repository is a regular folder that contains at least a .git subfolder.
+> Note: from the user perspective, a git repository is a regular folder that contains at least a .git subfolder.
 
 
-![Git areas](imgs/git-areas.svg)
+![Git areas](../imgs/git-areas.svg)
 
 
 ### Your first commit
@@ -93,7 +93,7 @@ A file in your worskpace has one these 4 status:
 - __modified__ i.e. since a previous commit
 - __staged__ ready for next commit
 
-Doc: https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
+> Doc: https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
 
 First, let's stage README.md:
 
@@ -127,13 +127,13 @@ nothing to commit, working tree clean
 
 After the commit, git status reports that the workspace is clean i.e. no modifications since the last commit.
 
-Exercice: add 2 new commits by adding or modifying the README.md
+> Exercice: add 2 new commits by adding or modifying the README.md
 
 Important: A **Commit** is a snapshot of the staged files in your workspace at a point in time.
 
 ### History
 
-Documentation: https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+> Documentation: https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
 
 git stores all the history of the files at commit time.
 
@@ -211,7 +211,7 @@ $ cat README.md
 A collection of small games.
 ```
 
-Summary, you can navigate in the history of your workspace by ``checkouting`` any commit in the git history given its hash.
+Summary: you can navigate in the history of your workspace by ``checkouting`` any commit in the git history given its hash.
 
 Nevertheless, a warning indicates that you are in 'detached HEAD' mode.
 Doing a checkout of the most recent commit hash does not solve this.
@@ -231,9 +231,9 @@ What should know:
 - branches
 - merge / rebase
 - HEAD
-- reset /
+- reset / revert
 
-Exercice: How to solve the 'detached HEAD' issue on your local repository?
+> Exercice: How to solve the 'detached HEAD' issue on your local repository?
 
 ```
 $ git status
@@ -252,4 +252,6 @@ On branch main
 nothing to commit, working tree clean
 ```
 
-## Going further / Bibliography
+## Bibliography
+
+- https://git-scm.com/book/en/v2
