@@ -7,7 +7,7 @@ It allows you to revert to previous versions, collaborate with others, and keep 
 ### Install and configure git
 
 Install git on your OS:
-- Doc: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+- Documentation: <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>
 - Add git to your `PATH`
 
 ```
@@ -36,7 +36,7 @@ You could have edited this file directly.
 
 ### Create your first local repository
 
-> Doc: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
+> Documentation: <https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository>
 
 ```
 $ mkdir MyFirstRepository
@@ -133,7 +133,7 @@ Important: A **Commit** is a snapshot of the staged files in your workspace at a
 
 ### History
 
-> Documentation: https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+> Documentation: <https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History>
 
 git stores all the history of the files at commit time.
 
@@ -222,7 +222,7 @@ You must understand branches.
 In the previous example, the history was linear because we only had one branch.
 But, git supports branches and the history is a tree.
 
-Exercices: Do all exercices in the principal tab of https://learngitbranching.js.org/?locale=fr_FR
+Exercices: Do all exercices in the principal tab of <https://learngitbranching.js.org/?locale=fr_FR>
 
 - **Branch**: A separate line of development. The default branch is usually called `main` or `master`.
 - **Merge**: Combining changes from different branches.
@@ -254,4 +254,4 @@ nothing to commit, working tree clean
 
 ## Bibliography
 
-- https://git-scm.com/book/en/v2
+- <https://git-scm.com/book/en/v2>
