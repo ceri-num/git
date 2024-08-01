@@ -1,10 +1,10 @@
-## What is Git?
+# What is Git?
 
 **Git** is a *decentralized* version control system created in 2005 by Linus Torvalds.
 Git tracks changes to files over time and do not prioritize one repository over others.
 It allows you to revert to previous versions, collaborate with others, and keep a history of your work.
 
-### Install and configure git
+## Install and configure git
 
 Install git on your OS:
 - Documentation: <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>
@@ -34,7 +34,7 @@ name = Luc Fabresse
 
 You could have edited this file directly.
 
-### Create your first local repository
+## Create your first local repository
 
 > Documentation: <https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository>
 
@@ -49,7 +49,7 @@ $ ls -a
 
 __git init__ initialize a directory as a local git repository so that we can then track versions of files inside this directory.
 
-### Local repository
+## Local repository
 
 A local repository contains 3 areas:
 - a **Workspace** or **working copy** that contains files on which you are working. Some of them may be tracked by git. Initially empty.
@@ -62,7 +62,7 @@ A local repository contains 3 areas:
 ![Git areas](../imgs/git-areas.svg)
 
 
-### Your first commit
+## Your first commit
 
 Add a `README.md` file into it this **MyFirstRepository** folder that contains:
 ```
@@ -131,7 +131,7 @@ After the commit, git status reports that the workspace is clean i.e. no modific
 
 Important: A **Commit** is a snapshot of the staged files in your workspace at a point in time.
 
-### History
+## History
 
 > Documentation: <https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History>
 
@@ -217,7 +217,7 @@ Nevertheless, a warning indicates that you are in 'detached HEAD' mode.
 Doing a checkout of the most recent commit hash does not solve this.
 You must understand branches.
 
-### Branches
+## Branches
 
 In the previous example, the history was linear because we only had one branch.
 But, git supports branches and the history is a tree.
