@@ -93,7 +93,7 @@ A file in your worskpace has one these 4 status:
 - __modified__ i.e. since a previous commit
 - __staged__ ready for next commit
 
-> Doc: https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
+> Documentation: <https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository>
 
 First, let's stage README.md:
 
