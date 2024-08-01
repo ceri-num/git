@@ -1,4 +1,4 @@
-# Outline
+# Table of contents
 
 * [Introduction](README.md)
 
@@ -9,24 +9,23 @@
 ## Git
 
 * [Basics](git-basics.md)
-* [Model](git-model.md)
-* [Branches](git-branches.md)
-* [Exercices](git-exos1.md)
+* [Model](git/model.md)
+* [Branches](git/branches.md)
+* [Exercices](git/exercices.md)
 
 ## Remote repositories
 
-* [Remotes](git-remotes.md)
+* [Remotes](remote-repositories/remotes.md)
 * [Github](git-github.md)
-* [Exercices](git-exos2.md)
+* [Exercices](remote-repositories/exercices.md)
 
 ## Best Pratices
 
-* [Conventions](git-conventions.md)
-* [Git worklow](git-workflows.md)
-* [Exercices](git-exos3.md)
-
+* [Conventions](best-pratices/conventions.md)
+* [Git worklow](best-pratices/git-worklow.md)
+* [Exercices](best-pratices/exercices.md)
 
 ## Appendix
 
-* [F.A.Q](appendix/faq.md)
-* [Bibliograpy](appendix/bib.md)
+* [F.A.Q](appendix/f.a.q.md)
+* [Bibliograpy](appendix/bibliograpy.md)
