@@ -1,4 +1,4 @@
-# What is Git?
+## What is Git?
 
 **Git** is a *decentralized* version control system created in 2005 by Linus Torvalds.
 Git tracks changes to files over time and do not prioritize one repository over others.
@@ -51,16 +51,13 @@ __git init__ initialize a directory as a local git repository so that we can the
 
 ## Local repository
 
-A local repository contains 3 areas:
+From the user perspective, a local git repository is a regular folder that contains at least a __.git__ subfolder.
+Nevertheless, git distinguishes 3 logical areas:
 - a **Workspace** or **working copy** that contains files on which you are working. Some of them may be tracked by git. Initially empty.
 - a **Stage area** or **index**  that stores information about what will go into your next commit (we will come to that later on). Initially empty.
 - a **Local repository** (__.git__ folder automatically created and managed by git) that contains the history i.e. all the versions of all tracked files.
 
-> Note: from the user perspective, a git repository is a regular folder that contains at least a .git subfolder.
-
-
 ![Git areas](../imgs/git-areas.svg)
-
 
 ## Your first commit
 
