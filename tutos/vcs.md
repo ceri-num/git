@@ -15,18 +15,17 @@ A **Version Control System (VCS)** is a tool that helps manage changes to files 
 1. **Local VCS**:
    - Stores changes in a database on your local machine.
    - Simple but can be problematic when collaborating with others.
-   - e.g. RCS <https://en.wikipedia.org/wiki/Revision_Control_System>
+   - Examples: RCS <https://en.wikipedia.org/wiki/Revision_Control_System>
 
 2. **Centralized VCS (CVCS)**:
    - Uses a central server to store all versions of a project’s files.
-   - Examples: Subversion (SVN), Perforce.
    - Allows collaboration but can be a single point of failure (if the server goes down).
-   - e.g. CVS, SVN (Subversion), Perforce
+   - Examples: CVS, SVN (Subversion), Perforce
 
 3. **Distributed VCS (DVCS)**:
    - Every collaborator has a local copy of the entire history of the project.
    - Offers better collaboration and redundancy (no single point of failure).
-   - e.g. BitKeeper, Git, Mercurial (Hg), Fossil, Bazaar
+   - Examples: BitKeeper, Git, Mercurial (Hg), Fossil, Bazaar
 
 ### Summary
 

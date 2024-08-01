@@ -4,10 +4,11 @@
 
 ## Introduction
 
-* [Version control?](vcs.md)
+* [Version control?](tutos/vcs.md)
 
 ## Git
 
+<<<<<<< HEAD
 * [Basics](git-basics.md)
 * [Model](git/model.md)
 * [Branches](git/branches.md)
@@ -29,3 +30,20 @@
 
 * [F.A.Q](appendix/f.a.q.md)
 * [Bibliograpy](appendix/bibliograpy.md)
+=======
+* [Basics](tutos/basics.md)
+* [Conflicts](tutos/conflicts.md)
+
+## Remote repositories
+
+* [Remotes](tutos/remotes.md)
+* [Github](tutos/github.md)
+
+## Best Practices
+
+* [Workflows](tutos/workflows.md)
+
+## Appendix
+
+* [F.A.Q](appendix/faq.md)
+>>>>>>> 5ed2a46 (update)
