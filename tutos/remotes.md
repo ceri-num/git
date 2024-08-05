@@ -77,18 +77,44 @@ Documentation: <https://github.com/git-guides/git-push>
 Send local commits on the current branch to a remote repository:
 
 ```
-$ git status
-3 local commits on BugFix
 $ git remote -v
-$ git push
+origin	git@github.com:xxx/yyy.git (fetch)
+origin	git@github.com:xxx/yyy.git (push)
+
+$ git status
+git status
+On branch bugFix
+nothing to commit, working tree clean
+
+$ git branch -a
+* bugFix
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
 ```
 
+We worked on the bugFix branch and committed everything locally (our workspace is clean).
 By default, git push send commits to the remote named origin.
+But, we cannot push directly since origin does not contain any bugFix branch.
+
+```
+$ git push
+fatal: The current branch bugFix has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin bugFix
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+```
+
 If the current branch does not exist on origin, you should specify it:
 
 ```
-$ git push -u origin bugFix
+$ git push --set-upstream origin bugFix
 ```
+
+If the branch already exists on the remote, git push is enough.
 
 ### **Pull**
 
