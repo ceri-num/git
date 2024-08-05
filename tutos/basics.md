@@ -1,14 +1,18 @@
 ## What is Git?
 
-**Git** is a *decentralized* version control system created in 2005 by Linus Torvalds.
+**Git** is a distributed version control system created in 2005 by Linus Torvalds.
 Git tracks changes to files over time and do not prioritize one repository over others.
 It allows you to revert to previous versions, collaborate with others, and keep a history of your work.
 
 ## Install and configure git
 
 Install git on your OS:
-- Documentation: <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>
-- Add git to your `PATH`
+
+{% hint style="info" %}
+Documentation: <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>
+{% endhint %}
+
+Add git to your `PATH` to make the git command available in your shell:
 
 ```
 $ git --version
@@ -33,10 +37,13 @@ name = Luc Fabresse
 ```
 
 You could have edited this file directly.
+Of course, a lot of custom settings can be configured in this file (<https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration>).
 
 ## Create your first local repository
 
-> Documentation: <https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository>
+{% hint style="info" %}
+Documentation: <https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository>
+{% endhint %}
 
 ```
 $ mkdir MyFirstRepository
@@ -47,7 +54,7 @@ $ ls -a
 .git
 ```
 
-__git init__ initialize a directory as a local git repository so that we can then track versions of files inside this directory.
+__git init__ initializes a directory as a local git repository so that we can then track versions of files inside this directory.
 
 ## Local repository
 
@@ -69,7 +76,7 @@ A collection of small games.
 ```
 
 We added a file named README.md and modified it in the workspace.
-`git status` reports that README.md as an __untracked file__.
+__git status__ reports that README.md as an __untracked file__.
 ```
 $ git status
 On branch main
@@ -84,13 +91,15 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 
-A file in your worskpace has one these 4 status:
+A file in your worskpace has one of these 4 status:
 - __untracked__ i.e. this file and its modifications are ignored by git there no history of the content of this file is stored
 - __unmodified__ i.e. has been tracked and committed but not modified since
 - __modified__ i.e. since a previous commit
 - __staged__ ready for next commit
 
-> Documentation: <https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository>
+{% hint style="info" %}
+Documentation: <https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository>
+{% endhint %}
 
 First, let's stage README.md:
 
@@ -124,13 +133,17 @@ nothing to commit, working tree clean
 
 After the commit, git status reports that the workspace is clean i.e. no modifications since the last commit.
 
-> Exercice: add 2 new commits by adding or modifying the README.md
+{% hint style="warning" %}
+Exercice: add 2 new commits by adding or modifying the README.md
+{% endhint %}
 
 Important: A **Commit** is a snapshot of all the staged files in your workspace at a point in time.
 
 ## History
 
-> Documentation: <https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History>
+{% hint style="info" %}
+Documentation: <https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History>
+{% endhint %}
 
 git stores all the history of the files at commit time.
 
@@ -208,18 +221,22 @@ $ cat README.md
 A collection of small games.
 ```
 
-Summary: you can navigate in the history of your workspace by ``checkouting`` any commit in the git history given its hash.
+{% hint style="info" %}
+Summary: you can navigate in the history of your workspace by ``"checkouting"`` any commit in the git history given its hash.
+{% endhint %}
 
 Nevertheless, a warning indicates that you are in 'detached HEAD' mode.
 Doing a checkout of the most recent commit hash does not solve this.
-You must understand branches.
+You must understand branches to exit this repository state.
 
 ## Branches
 
 In the previous example, the history was linear because we only had one branch.
 But, git supports branches and the history is a tree.
 
-Exercices: Do all exercices in the principal tab of <https://learngitbranching.js.org/?locale=fr_FR>
+{% hint style="warning" %}
+Exercice: Do all exercices in the "principal" tab of <https://learngitbranching.js.org/?locale=fr_FR>
+{% endhint %}
 
 - **Branch**: A separate line of development. The default branch is usually called `main` or `master`.
 - **Merge**: Combining changes from different branches.
@@ -230,7 +247,9 @@ What should know:
 - HEAD
 - reset / revert
 
-> Exercice: How to solve the 'detached HEAD' issue on your local repository?
+{% hint style="warning" %}
+Exercice: How to solve the 'detached HEAD' issue on your local repository?
+{% endhint %}
 
 ```
 $ git status

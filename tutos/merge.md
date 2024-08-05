@@ -1,12 +1,13 @@
-## What is GitHub?
+## Merge and Conflicts
 
-- **GitHub** is a web-based platform that uses Git for version control.
-- It allows you to store your repositories online and collaborate with others.
-- Key features:
-  - **Pull Request**: A request to merge changes from one branch to another, often used for code review.
-  - **Fork**: A personal copy of someone else's repository.
-  - **Clone**: A local copy of a remote repository.
+When merging 2 branches, we want to merge the history of one branch (its commits) into the another one.
 
+## Fast-forward
+
+Such a merge might be really easy if one branch is pointing a commit in the history of the other one (fast-forward).
+
+
+## Merge
 
 ```
  git pull
@@ -31,3 +32,18 @@ hint: or --ff-only on the command line to override the configured default per
 hint: invocation.
 fatal: Need to specify how to reconcile divergent branches.
 ```
+
+## Rebase
+
+TODO
+
+## Take away
+
+- Fast-forward is the simplest case
+- Prefer rebase over merge locally
+- Always merge (never rebase) public (pushed) branches (see later)
+
+## Bibliography
+
+- <https://www.atlassian.com/git/tutorials/merging-vs-rebasing>
+

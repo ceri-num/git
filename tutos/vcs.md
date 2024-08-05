@@ -15,7 +15,7 @@ A **Version Control System (VCS)** is a tool that helps manage changes to files 
 1. **Local VCS**:
    - Stores changes in a database on your local machine.
    - Simple but can be problematic when collaborating with others.
-   - Examples: RCS <https://en.wikipedia.org/wiki/Revision_Control_System>
+   - Examples: RCS
 
 2. **Centralized VCS (CVCS)**:
    - Uses a central server to store all versions of a project’s files.
