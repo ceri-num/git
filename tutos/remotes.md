@@ -51,9 +51,52 @@ Speficic Github operations:
 
 ## Operations involving remote repositories
 
-- **Clone**: A local copy of a remote repository.
-- **Push**: Send local commits to a remote repository.
-- **Pull**: Get remote commits into a local repository and checkout the corresponding workspace.
+### Clone and Fork
+
+Create local copy of a remote repository.
+
+```
+git clone https://github.com/mivinci/pacman.git
+```
+
+You can commit your own modifications to this game locally.
+However, you cannot push your commits directly to this repository nor propose them.
+
+To contribute to a repository on which you do not have rights, you should:
+1. Through github, __fork__ this repository on your github account
+2. Clone your own repository locally
+3. Push your commits to your repository
+4. Through github, you can then issue a pull request from one of your branch to the originally forked repository
+
+### **Push**
+
+{% hint style="info" %}
+Documentation: <https://github.com/git-guides/git-push>
+{% endhint%}
+
+Send local commits on the current branch to a remote repository:
+
+```
+$ git status
+3 local commits on BugFix
+$ git remote -v
+$ git push
+```
+
+By default, git push send commits to the remote named origin.
+If the current branch does not exist on origin, you should specify it:
+
+```
+$ git push -u origin bugFix
+```
+
+### **Pull**
+
+{% hint style="info" %}
+Documentation: <https://github.com/git-guides/git-pull>
+{% endhint%}
+
+Get remote commits into a local repository and checkout the corresponding workspace.
 
 Example:
 ```
@@ -80,4 +123,13 @@ hint: invocation.
 fatal: Need to specify how to reconcile divergent branches.
 ```
 
+## Take away
 
+Typical work session innvolving one branch only:
+
+1. `git pull`, resync your local repository and workspace with origin (get commits from others)
+2. work
+3. `git commit` (go back to 2 if more work is needed)
+4. `git pull` resync and resolve conflicts if needed
+5. `git push` send all your new commits to origin
+6. you can stop working here since your workspace is clean and all your commits have been pushed remotely

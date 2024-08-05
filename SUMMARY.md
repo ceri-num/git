@@ -14,11 +14,8 @@
 
 * [Remotes](tutos/remotes.md)
 * [Merging](tutos/merge.md)
+* [Useful commands](tutos/commands.md)
 
 ## Best Practices
 
 * [Workflows](tutos/workflows.md)
-
-## Appendix
-
-* [F.A.Q](appendix/faq.md)
