@@ -149,6 +149,12 @@ hint: invocation.
 fatal: Need to specify how to reconcile divergent branches.
 ```
 
+The first time you do a git pull, git may ask some default policies: rebase, ff, ...
+In my case, I usually select those policies:
+
+- `git config --global pull.ff true`: allowing fast-forward
+- `git config --global pull.rebase true`: allowing rebasing my local commits when pulling remote commits
+
 ## Take away
 
 Typical work session innvolving one branch only:
