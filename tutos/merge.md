@@ -6,36 +6,22 @@ When merging 2 branches, we want to merge the history of one branch (its commits
 
 Such a merge might be really easy if one branch is pointing a commit in the history of the other one (fast-forward).
 
+![Simplest merge case: fast-forward](../imgs/git-merge-fastforward.png)
 
 ## Merge
 
-```
- git pull
-remote: Enumerating objects: 17, done.
-remote: Counting objects: 100% (17/17), done.
-remote: Compressing objects: 100% (6/6), done.
-remote: Total 15 (delta 1), reused 15 (delta 1), pack-reused 0
-Unpacking objects: 100% (15/15), 1.97 KiB | 503.00 KiB/s, done.
-From github.com:ceri-num/git
-   5647bb3..26292da  master     -> origin/master
-hint: You have divergent branches and need to specify how to reconcile them.
-hint: You can do so by running one of the following commands sometime before
-hint: your next pull:
-hint:
-hint:   git config pull.rebase false  # merge
-hint:   git config pull.rebase true   # rebase
-hint:   git config pull.ff only       # fast-forward only
-hint:
-hint: You can replace "git config" with "git config --global" to set a default
-hint: preference for all repositories. You can also pass --rebase, --no-rebase,
-hint: or --ff-only on the command line to override the configured default per
-hint: invocation.
-fatal: Need to specify how to reconcile divergent branches.
-```
+![Typical merge case](../imgs/git-merge.png)
+
+Regular merge creates a new commit usually called the merge commit.
 
 ## Rebase
 
-TODO
+![Rebase](../imgs/git-rebase.png)
+
+You are working on a bugFix but main evolves (1 commit not in the bugFix branch).
+You can rebase the bugFix branch on the latest commit in the main branch.
+It means that all commits in the bugFix branch will be re-applied.
+After the rebase, we could merge bugFix into main and it would always be a fast-forward.
 
 ## Take away
 
