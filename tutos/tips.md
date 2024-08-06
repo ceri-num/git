@@ -17,4 +17,5 @@ For example, cloning a git repository directly in the `DOCUMENT_ROOT` of a Web s
 
 ## Using a GUI
 
-Some actions are not possible using the git CLI
+Once you understood the basics of git using the git CLI, you can use one of the many [git Client GUI](https://git-scm.com/downloads/guis). You can even use the built in [VSCode code git support](https://code.visualstudio.com/docs/sourcecontrol/overview).
+

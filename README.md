@@ -1,14 +1,8 @@
-# Version Control and git
-
-A brief lecture on version control and git at the [IMT Nord Europe](http://www.imt-nord-europe.fr) engineering school.
+# Version Control, git and github
 
 ## About this lecture
 
-- Warning: this lecture heavily relies on external ressources and text generated from Chat GPT.
-- Deployed and publicly accessible on gitbook: <https://ceri-num.gitbook.io/git/>
-- Sources are versionned on github: <https://ceri-num.gitbook.io/git/>
-
-## Going further
-
-A lot of ressources about git are there on the web.
-This lecture just gather some of them and guide the reader through them.
+- a brief an __incomplete__ lecture on version control and git.
+It just provides the minimum knowledge for [IMT Nord Europe](http://www.imt-nord-europe.fr) engineering students.
+- relies on external ressources and some text generated from Chat GPT.
+- is deployed and publicly accessible on gitbook: <https://ceri-num.gitbook.io/git/>
