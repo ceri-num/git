@@ -9,8 +9,12 @@ If you stored, committed and publicly pushed a sensitive info (SSH certificate, 
 - Change it immediatly if it happens
 {% endhint %}
 
-## .git directory of private repositories
+## Sensite infos in private git repositories
 
 Using a private git repository is not enough to ensure security.
-You should not make the `.git` folder publicly accessible for example in the `DOCUMENT_ROOT` of a Web server.
+You should ensure that the `.git` folder is not publicly accessible.
+For example, cloning a git repository directly in the `DOCUMENT_ROOT` of a Web server to deploy a web app may make the `.git` folder public accessible.
 
+## Using a GUI
+
+Some actions are not possible using the git CLI

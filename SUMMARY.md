@@ -12,8 +12,8 @@
 * [Remote repositories](tutos/remotes.md)
 * [Merging](tutos/merge.md)
 * [Useful commands](tutos/commands.md)
-
-## Best Practices
-
 * [Workflows](tutos/workflows.md)
+
+## Appendix
+
 * [Tips](tutos/tips.md)
