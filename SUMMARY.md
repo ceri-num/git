@@ -14,6 +14,10 @@
 * [Useful commands](tutos/commands.md)
 * [Workflows](tutos/workflows.md)
 
+## Practice
+
+* [Exo1](exos/exo1.md)
+
 ## Appendix
 
 * [Tips](tutos/tips.md)
