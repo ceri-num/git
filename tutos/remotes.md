@@ -49,6 +49,31 @@ Speficic Github operations:
 - **Fork**: A personal copy of someone else's repository.
 - **Pull Request**: A request to merge changes from one branch to another, often used for code review.
 
+## Authentification
+
+Accessing a github remote repository, requires either an https or ssh remote URL (cf. [doc](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories)).
+In both cases, you need to deal with authentication: [Personal Access Tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) using https or [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
+
+The SSH method in a nutshell without a passphrase:
+
+```
+$ ssh-keygen -t ed25519 -f ~/.ssh/id_github -C "bob@leponge.fr"
+
+$ ls ~/.ssh/id_github*
+id_github           # <- private key, never ever share it
+id_github.pub       # <- public key
+```
+
+Then, you should set the public key in your Github Settings under the SSH and GPG keys section.
+
+You can then use SSH URLs to access remote git repositories on github such as:
+
+```
+$ git remote -v
+origin	git@github.com:xxx/yyy.git (fetch)
+origin	git@github.com:xxx/yyy.git (push)
+```
+
 ## Operations involving remote repositories
 
 ### Clone and Fork
@@ -74,13 +99,11 @@ To contribute to a repository on which you do not have rights, you should:
 Documentation: <https://github.com/git-guides/git-push>
 {% endhint%}
 
+You must have rights on the remote repository to oush your local commits into it.
+
 Send local commits on the current branch to a remote repository:
 
 ```
-$ git remote -v
-origin	git@github.com:xxx/yyy.git (fetch)
-origin	git@github.com:xxx/yyy.git (push)
-
 $ git status
 git status
 On branch bugFix
