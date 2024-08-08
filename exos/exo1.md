@@ -7,7 +7,7 @@ Exercice: Compile and run the Flappy bird C implementation from <https://github.
 __Question 1__: which git operation will you do first?
 
 {% hint style="warning" %}
-Yes, compiling someone's else code is difficult, you need to read the doc (if any), install the required dependencies, ...
+Yes, compiling someone else's code is difficult, you need to read the doc (if any), install the required dependencies, ... So, help your users: document, provide compilation scripts, ...
 {% endhint%}
 
 {% hint style="info" %}
