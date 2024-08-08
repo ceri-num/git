@@ -13,6 +13,7 @@
 * [Merging](tutos/merge.md)
 * [Useful commands](tutos/commands.md)
 * [Workflows](tutos/workflows.md)
+* [Tips](tutos/tips.md)
 
 ## Practice
 
@@ -20,5 +21,4 @@
 
 ## Appendix
 
-* [Tips](tutos/tips.md)
 * [Webography](bib.md)
