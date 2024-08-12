@@ -18,6 +18,7 @@
 ## Practice
 
 * [Exo1](exos/exo1.md)
+* [Exo2](exos/exo2.md)
 
 ## Appendix
 
