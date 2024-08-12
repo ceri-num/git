@@ -16,7 +16,7 @@ So far, both of them will push their feature branch in their own fork.
 Task2:
 - Alice's should merge her `feature/backgroundcolors` into `main`
 - Bob will issue a pull request from his `feature/pillarcolors` to Alice's `main` branch
-- Alice and Bob will review it the pull request, solve conflicts and integrate it into Alice's `main` branch
+- Alice and Bob will review the pull request, solve conflicts and merge into Alice's `main` branch
 {% endhint %}
 
 At the end, the `main` branch of Alice's fork should contain a version of the flappy game that supports both changing the background and the pillar colors.
