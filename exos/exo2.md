@@ -2,14 +2,15 @@
 
 Alice and bob are working together on `tinyc.games`.
 They both forked the repository:
-- Alice's fork: <https://github.com/alice/tinyc.games>.
-- Bob's fork: <https://github.com/bob/tinyc.games>.
+- Alice forked `superjer/tinyc.games`: <https://github.com/alice/tinyc.games>
+- Bob forked `alice/tinyc.games`: <https://github.com/bob/tinyc.games>
 
 {% hint style="info" %}
 Task1:
 - Alice will create a branch named `feature/backgroundcolors` and make it possible to change the background colors by pressing `b`
 - Bob will create a branch named `feature/pillarcolors` and make it possible to change the pillar colors by pressing `p`
-So far, both of them will push their feature branch in their own fork.
+
+So far, both of them will push their feature branch in their own fork
 {% endhint %}
 
 {% hint style="info" %}
